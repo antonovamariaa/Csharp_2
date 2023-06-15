@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num>99){
+while (num>999){
+    num = num / 10;
+}
+num = num%10;
+Console.WriteLine(num);
+}
+else {
+    Console.WriteLine("No third digit");
+}
